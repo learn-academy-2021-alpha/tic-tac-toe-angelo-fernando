@@ -1,21 +1,28 @@
-import React, { Component } from 'react'
-import Square from './components/Square'
-import './App.css'
+import React, { Component } from 'react';
+import Game from './components/Game';
+import './App.css';
 
  function App(){
    return(
-     <div className="App">
-       <h className="App-Header">
-      <img src={
-        logo className= "App-logo" alt="logo" />
-      }
+     <Game />
 
-       </h>       
-     </div>
-   )
+   );
  }
-
-
+export default App
+ // <div className="App">
+ //   <header className="App-Header">
+ //  <img src={
+ //    logo className= "App-logo" alt="logo" />
+ //  <p>Edit <code>src/App.js</code and save to refresh<p>
+ //  <a className="App-Link"
+ //      href="https://reactjs.org"
+ //      target="_blank"
+ //      rel="noopener noreferrer"
+ //  >
+ //    This is a place holder
+ //    </a>
+ //   </header>
+ // </div>
 
 
 
@@ -30,7 +37,7 @@ import './App.css'
 //       actualPlayer: null,
 //     }
 //   }
-  
+
 //   handleClick = () => {
 //     this.props.handleGamePlay(this.props.index)
 

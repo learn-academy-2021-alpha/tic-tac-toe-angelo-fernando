@@ -14,17 +14,14 @@ class Game extends Component{
     render(){
         const history = this.state.history;
         const current= history[this.state.stepNumber];
-        
+
         return(
             <div className= "game">
             <div className="game-board">
-            <Board onClick={(i)=> this.onClick(i)} 
-            squares={current.squares} />  
+            <Board onClick={(i)=> this.onClick(i)}
+            squares={current.squares} />
             </div>
             </div>
 
         )
     }
-
-    )
-    
