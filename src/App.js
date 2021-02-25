@@ -2,35 +2,53 @@ import React, { Component } from 'react'
 import Square from './components/Square'
 import './App.css'
 
- class App extends Component{
-  constructor(props){
-    super(props)
-    this.state = {
-      squares: [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      winner: false,
-      draw: false,
-      actualPlayer: null,
-    }
-  }
+ function App(){
+   return(
+     <div className="App">
+       <h className="App-Header">
+      <img src={
+        logo className= "App-logo" alt="logo" />
+      }
+
+       </h>       
+     </div>
+   )
+ }
+
+
+
+
+
+
+
+  // constructor(props){
+  //   super(props)
+  //   this.state = {
+//       squares: [0, 0, 0, 0, 0, 0, 0, 0, 0],
+//       winner: false,
+//       draw: false,
+//       actualPlayer: null,
+//     }
+//   }
   
-  handleClick = () => {
-    this.props.handleGamePlay(this.props.index)
+//   handleClick = () => {
+//     this.props.handleGamePlay(this.props.index)
 
 
-  // when you click the square it returns an x or an o
-handleGamePlay = (index) => {
-  const { squares, winner, draw, actualPlayer } =
-  this.state
-  if(index === 0){
-    squares[index] = "❌"
-    this.setState({ squares: squares })
-  } else if(index !== 0){
-    squares[index] = "〇"
-    this.setState({ squares: squares })
-  } else {
-    squares[index] = "🤬"
-    this.setState({ squares: squares })
-}}
+//   // when you click the square it returns an x or an o
+// handleGamePlay = (index) => {
+//   const { squares, winner, draw, actualPlayer } =
+//   this.state
+//   if(index === 0){
+//     squares[index] = "❌"
+//     this.setState({ squares: squares })
+//   } else if(index !== 0){
+//     squares[index] = "〇"
+//     this.setState({ squares: squares })
+//   } else {
+//     squares[index] = "🤬"
+//     this.setState({ squares: squares })
+// }}
 //   (this.state.firstPlayer)
 //     this.setState({ squares: "❌" })
 //    {
