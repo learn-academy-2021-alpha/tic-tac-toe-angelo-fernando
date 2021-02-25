@@ -3,3 +3,11 @@
   width: 100px;
   border: 2px solid black;
 }
+
+.gameboard{
+  display: flex;
+  width: 620px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+}
