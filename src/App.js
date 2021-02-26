@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Game from './components/Game';
 import './App.css';
+import Game from './components/Game';
+
 
  function App(){
    return(
@@ -67,25 +68,25 @@ export default App
 //determine winner
 
 
-  render(){
-    return(
-      <>
-        <h1>Tic Tac Toe</h1>
-        <div className="gameboard">
-        { this.state.squares.map((value, index) => {
-        return (
-          <Square
-          value= { value }
-          key= { index }
-          handleGamePlay= { this.handleGamePlay }
-        />
-      )
-    })}
-    </div>
-    </>
-    )
-  }
-}
+//   render(){
+//     return(
+//       <>
+//         <h1>Tic Tac Toe</h1>
+//         <div className="gameboard">
+//         { this.state.squares.map((value, index) => {
+//         return (
+//           <Square
+//           value= { value }
+//           key= { index }
+//           handleGamePlay= { this.handleGamePlay }
+//         />
+//       )
+//     })}
+//     </div>
+//     </>
+//     )
+//   }
+// }
 
 
-export default App
+// export default App
