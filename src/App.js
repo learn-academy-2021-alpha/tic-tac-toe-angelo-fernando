@@ -5,8 +5,10 @@ import Game from './components/Game';
 
  function App(){
    return(
-     <Game />
-
+    <div>   
+    <header className= "App-Header"> Tic Tac Toe</header>
+    <Game />
+    </div>
    );
  }
 export default App

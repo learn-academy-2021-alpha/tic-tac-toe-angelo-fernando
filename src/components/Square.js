@@ -1,19 +1,17 @@
 import React, { Component } from 'react'
 
-class Square extends Component{
+ class Square extends Component{
 
-    // handleClick = () => {
-    // this.props.handleGamePlay(this.props.squares)
+  
 
 
   render(){
     return(
-      <>
-        <div className="square"
-        onClick= { this.handleClick }>
-        { this.props.value }</div>
-      </>
-    )
-  }
+      <button className= "sqaure" onClick= {
+        this.props.onClick}>
+          {this.props.value}
+      </button>
+     )
+    }
 }
 export default Square
