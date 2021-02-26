@@ -14,7 +14,7 @@ export default class Game extends Component{
     }
     jumpTo(step) {
         this.setState({
-            stepNumber: step, 
+            stepNumber: step,
             xIsNext: (step % 2) === 0
         })
     }
@@ -27,7 +27,7 @@ export default class Game extends Component{
         if(winner || squares[i]){
             return;
         }
-        squares[i]= this.state.xIsNext ?'X':'O';
+        squares[i]= this.state.xIsNext ?'❌':'〇';
         this.setState({
         history: history.concat({
             squares: squares
@@ -43,7 +43,7 @@ export default class Game extends Component{
         const current= history[this.state.stepNumber];
         const winner= caluculateWinner(current.squares);
         const moves= history.map((step, move) =>{
-            const desc= move ? 'go to #' + move:'start move';
+            const desc= move ? 'go to move #' + move:'Restart Game';
             return(
                 <li key= { move }>
                     <button onClick= {()=>{this.jumpTo(move)}}>
@@ -54,10 +54,10 @@ export default class Game extends Component{
         });
         let status;
         if(winner) {
-            status='winner is'+ winner
+            status='winner is '+ winner
         }
         else {
-            status= 'next player is' +(this.state.xIsNext ? 'X':'O');
+            status= 'next player is ' + (this.state.xIsNext ? '❌':'〇');
 
         }
             return (
@@ -92,7 +92,5 @@ function caluculateWinner(squares) {
             return squares[a];
         }
     }
-    return null 
+    return null
 }
-
- 

@@ -1,5 +1,5 @@
 .square{
-  background: white;
+  background: black;
   height: 80px;
   width: 80px;
   border: 1px solid black;
@@ -8,35 +8,49 @@
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  font-size: 40px;
+  font-size: 100px;
   line-height: 80px;
   font-weight: bold;
+}
+body{
+  background-image: url('/Users/learnacademy/Desktop/8iGb5r5oT.jpg');
 }
 
 .square:focus{
   outline: none;
 }
- 
-header{
-  margin-top: 40px;
-  text-align: center;
-  
-} 
 
-.board-row:after{
+header{
+  margin-top: 100px;
+  text-align: center;
+
+}
+
+.board-row:{
+  height: 420px;
+  width: 420px;
   clear:both;
   content: "";
   display: table;
-  
+
+
 }
 .game{
   position: absolute;
+  height: 420px;
+  width: 420px;
   left: 50%;
   top: 50%;
   display: flex;
   transform: translate(-50%,-50%);
   flex-direction: row;
   margin: 0 auto;
+
+
+}
+.game-board{
+  height: 420px;
+  width: 420px;
 
 }
 
@@ -51,4 +65,11 @@ ul{
 .status{
   margin-bottom: 10px;
 }
-
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-left: 100px
+}
